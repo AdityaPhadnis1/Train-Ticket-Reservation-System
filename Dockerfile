@@ -6,10 +6,10 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
 #Copy the source code from your host machine to your container
-COPY src/Main.java /app/Main.java
+COPY src/Master.java /app/Master.java
 
 #compile the application code
-RUN javac Main.java
+RUN javac Master.java
 
 #run the application
 CMD ["java", "Main"]
